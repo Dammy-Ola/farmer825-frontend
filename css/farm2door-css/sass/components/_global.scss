@@ -1,0 +1,80 @@
+@import 'colors';
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background: $white;
+  color: $primary-color;
+  img {
+    display: block;
+    width: auto;
+    height: 54px;
+  }
+  ul > li > a {
+    color: $primary-color;
+  }
+}
+
+header {
+  height: calc(100vh - 56px) !important;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.my-card {
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5) !important;
+  &:hover {
+    padding: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+  }
+  .my-card-img {
+    display: block;
+    width: 100%;
+  }
+  .my-card-title {
+    h4 {
+      font-size: 1.5rem;
+      color: $primary-color;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+.my-card-content {
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $secondary-color;
+    margin: 10px 0 10px 0;
+  }
+  .my-btn {
+    color: $white;
+    background: $secondary-color;
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}
+
+.flex-content {
+  display: flex;
+  .flex-items {
+    flex: 1;
+  }
+}
+
+.margin-auto {
+  margin: auto;
+  width: 80%;
+}
