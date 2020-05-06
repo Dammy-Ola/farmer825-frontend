@@ -118,7 +118,7 @@
               <div class="flex-content">
                 <div class="items">
                   <h4>ITEMS</h4>
-                  <h5>Cost</h5>
+                  <h5>Cost <small>(per pig)</small></h5>
                   <p>Feed + Dewormer + Disinfect</p>
                   <p>Rent + Labour + Utility + Waste MGT</p>
                   <p>MGT Fee <small>(Includes security)</small></p>
@@ -146,8 +146,11 @@
                 <h4 class="my-text-center">SUBSCRIBE NOW!!!</h4>
                 <form action="">
                   <label for="">How many are you starting with</label>
-                  <input type="number" name="" id="" placeholder="2" />
-                  <h4>TOTAL: GHS 1575</h4>
+                  <input type="text" name="" id="how_many" value="1" />
+                  <h4>
+                    TOTAL: GHS
+                    <span id="cal_total">1575</span>
+                  </h4>
                   <button type="submit" class="my-btn">
                     SUBSCRIBE <i class="fas fa-piggy-bank"></i>
                   </button>
@@ -192,5 +195,6 @@
         $('.parallax').parallax();
       });
     </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
