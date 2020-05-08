@@ -11,51 +11,57 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>FARMER825</title>
   </head>
   <body>
-    <header>
+    <header id="home" class="scrollspy">
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
             <div class="container">
+              <!-- <a href="#" class="brand-logo">
+               LOGO
+              </a> -->
               <a href="#" class="brand-logo">
-                <img src="../img/farm2door-log.png" alt="" height="100%" />
+                <img src="../img/farm2door-log.png" alt="" height="100%" class="esponsive-img" />
               </a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-                ><i class="material-icons">menu</i></a
-              >
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Home</a></li>
-                <li><a href="badges.html">Account</a></li>
-                <li><a href="collapsible.html">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#">Contact Us</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#sign-up">Sign Up</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
 
-      <section class="hero">
+      <section id="showcase-section">
         <div class="container">
-          <div class="hero">
-            <div class="hero-img">
-              <img src="../svg/undraw_Savings_dwkw.svg" alt="" />
+          <div class="showcase">
+            <div class="showcase-img">
+              <img src="../svg/undraw_Savings_dwkw.svg" alt="" class="responsive-img"/>
             </div>
-            <div class="hero-msg-container">
-              <div class="hero-msg">
+            <div class="showcase-msg-container">
+              <div class="showcase-msg">
                 <h1 class="heading-1">
                   You can be a <span>profitable farmer</span> at your own
                   <span>convenience</span>
                 </h1>
               </div>
-              <div class="hero-action">
-                <a href="" class="my-btn my-text-center"
+              <div class="showcase-action">
+                <a href="#how-it-works" class="tb-btn my-text-center"
                   >LEARN HOW <i class="fas fa-hand-holding-usd"></i
                 ></a>
               </div>
@@ -65,10 +71,34 @@
       </section>
     </header>
 
-    <section id="how-it-works">
+    <section id="quick-contact">
+      <a href="tel:+233322005235" target="_blank">
+        <i
+          class="call tooltipped fas fa-phone"
+          data-position="left"
+          data-tooltip="Call Us"
+        ></i>
+      </a>
+      <!-- <a
+        href="https://web.whatsapp.com/send?phone=233551818916&text=Hello%20I'm%20from%20your%20website%20https://farmer825.com,%20I%20would%20like%20to%20find%20out%20more%20about%20FARMER825%20project"
+        target="_blank"
+      > -->
+      <a
+        href="https://wa.me/233551818916?text=Hello%20I'm%20from%20your%20website%20https://farmer825.com,%20I%20would%20like%20to%20find%20out%20more%20about%20FARMER825%20project."
+        target="_blank"
+      >
+        <i
+          class="whatsapp tooltipped fab fa-whatsapp"
+          data-position="left"
+          data-tooltip="Whatsapp Us"
+        ></i>
+      </a>
+    </section>
+
+    <section id="how-it-works" class="scrollspy">
       <div class="container">
-        <h3 class="title">How it works</h3>
-        <div id="model">
+        <h3 class="tb-title">How it works</h3>
+        <div class="model">
           <div class="model-img">
             <img src="../svg/undraw_subscriber_vabu.svg" alt="" />
           </div>
@@ -76,7 +106,7 @@
             <h4>1. Subscribe To Be a Farmer</h4>
           </div>
         </div>
-        <div id="model">
+        <div class="model">
           <div class="model-img">
             <img src="../svg/undraw_our_solution_htvp.svg" alt="" />
           </div>
@@ -84,7 +114,7 @@
             <h4>2. We Manage For You</h4>
           </div>
         </div>
-        <div id="model">
+        <div class="model">
           <div class="model-img">
             <img src="../svg/undraw_mobile_testing_reah.svg" alt="" />
           </div>
@@ -92,7 +122,7 @@
             <h4>3. Monitor Your Farm Anytime Anywhere</h4>
           </div>
         </div>
-        <div id="model">
+        <div class="model">
           <div class="model-img">
             <img src="../svg/undraw_transfer_money_rywa.svg" alt="" />
           </div>
@@ -103,19 +133,18 @@
       </div>
     </section>
 
-    <section id="subscribe">
-      <div class="parallax-container">
-        <div class="parallax">
-          <img src="../img/group-of-pink-pigs-on-cage-2252541.jpg" alt="" />
-        </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="../img/group-of-pink-pigs-on-cage-2252541.jpg" alt="" />
       </div>
+    </div>
+    <section id="sign-up" class="section scrollspy">
       <div class="container">
-        <h3 class="title">Subscribe Now</h3>
+        <!-- <h3 class="title">Sign up Now</h3> -->
         <div class="flex-content">
           <div class="flex-items">
-            <!-- <div class=""> -->
             <div class="my-card">
-              <div class="flex-content">
+              <!-- <div class="flex-content">
                 <div class="items">
                   <h4>ITEMS</h4>
                   <h5>Cost <small>(per pig)</small></h5>
@@ -136,53 +165,146 @@
                     <h4>GHS 1,575</h4>
                   </div>
                 </div>
-              </div>
+              </div> -->
+              <table class="striped centered">
+                <thead>
+                  <tr>
+                      <th>ITEMS</th>
+                      <th>COST (GHS)</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td class="main">Cost <small>(per pig)</small></td>
+                    <td class="main">1200</td>
+                  </tr>
+                  <tr>
+                    <td>Feed + Dewormer + Disinfect</td>
+                    <td>47</td>
+                  </tr>
+                  <tr>
+                    <td>Rent + Labour + Utility + Waste MGT</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>MGT Fee <small>(Includes security)</td>
+                    <td>22</td>
+                  </tr>
+                  <tr class="main">
+                    <td class="main">Monthly Expenditure</td>
+                    <td class="main"><small>75 * 5 months</small> (375)</td>
+                  </tr>
+                  <tr>
+                    <td class="total">TOTAL</td>
+                    <td class="total">GHS 1,575</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <!-- </div> -->
           </div>
           <div class="flex-items">
-            <div class="subscribe-form">
+            <div class="sign-up-form">
               <div class="my-card">
-                <h4 class="my-text-center">SUBSCRIBE NOW!!!</h4>
                 <form action="">
-                  <label for="">How many are you starting with</label>
-                  <input type="text" name="" id="how_many" value="1" />
-                  <h4>
-                    TOTAL: GHS
-                    <span id="cal_total">1575</span>
-                  </h4>
-                  <button type="submit" class="my-btn">
-                    SUBSCRIBE <i class="fas fa-piggy-bank"></i>
-                  </button>
+                  <h4 class="tb-title">SIGN UP FORM</h4>
+                  <form action="">
+                    <div class="input-field">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="surname" type="text" class="validate">
+                      <label for="surname">Surname</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="other_name" type="text" class="validate">
+                      <label for="other_name">Other Name</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="tel" type="tel" class="validate">
+                      <label for="tel">Your Phone Number</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                    <div class="input-field">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Confirm password</label>
+                    </div>
+                    <div class="input-field">
+                      <input type="text" name="" id="how_many" value="1" autocomplete="off" />
+                      <label for="">How many pigs are you starting with</label>
+                    </div>
+                    <!-- <div class="input-field">
+                      <input id="hear" type="hear" class="validate">
+                      <label for="hear">Other Name</label>
+                    </div> -->
+                    <!-- <label for="">How many are you starting with</label>
+                    <input type="text" name="" id="how_many" value="1" autocomplete="off" /> -->
+                    <h4>
+                      TOTAL: GHS
+                      <span id="cal_total">1575</span>
+                    </h4>
+                    <button type="submit" class="tb-btn">
+                      SIGN UP <i class="fas fa-piggy-bank"></i>
+                    </button>
+                  </div>
                 </form>
-              </div>
+              </form>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax">
-          <img src="../img/group-of-pink-pigs-on-cage-2252541.jpg" alt="" />
         </div>
       </div>
     </section>
-    <section id="learn-more">
-      <div class="flex-content">
-        <h4 class="text-primary title">
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="../img/group-of-pink-pigs-on-cage-2252541.jpg" alt="" />
+      </div>
+    </div>
+    <section id="learn-more" class="scrollspy">
+      <!-- <div class="flex-content"> -->
+        <h4 class="tb-title">
           Learn More Through a video
         </h4>
         <div class="container">
-          <iframe
-            width="853"
-            height="480"
-            src="https://www.youtube.com/embed/Gx_7GQtSdpc"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/AL7vgMMQZjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Our Mission</h5>
+            <p class="grey-text text-lighten-4">Making Agriculture Lucrative, Fun And Less Stressful In Africa.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="footer-copyright">
+        <div class="container">
+        <span class="white-text">© 2020 Copyright FARM2DOOR</span>
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
@@ -192,9 +314,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
+        $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
       });
     </script>
     <script src="../js/index.js"></script>
+    <!-- <form>
+      <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+      <button type="button" onClick="payWithRave()">Pay Now</button>
+    </form> -->
+
+    <!-- <script>
+      const API_publicKey = 'FLWPUBK-cfd2294a720855583bf5c35249cca381-X';
+
+      function payWithRave() {
+        var x = getpaidSetup({
+          PBFPubKey: API_publicKey,
+          customer_email: 'user@example.com',
+          amount: 1575,
+          customer_phone: '234099940409',
+          currency: 'GHS',
+          txref: 'rave-123456',
+          meta: [
+            {
+              metaname: 'flightID',
+              metavalue: 'AP1234',
+            },
+          ],
+          onclose: function () {},
+          callback: function (response) {
+            var txref = response.data.txRef; // collect txRef returned and pass to a                    server page to complete status check.
+            console.log(
+              'This is the response returned after a charge',
+              response
+            );
+            if (
+              response.data.chargeResponseCode == '00' ||
+              response.data.chargeResponseCode == '0'
+            ) {
+              // redirect to a success page
+            } else {
+              // redirect to a failure page.
+            }
+
+            x.close(); // use this to close the modal immediately after payment.
+          },
+        });
+      }
+    </script> -->
   </body>
 </html>

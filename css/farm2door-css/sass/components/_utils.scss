@@ -1,275 +1,245 @@
-.m1 {
-  margin: 1rem;
-}
-
-.heading-1 {
-  font-size: 3rem;
-  font-weight: bolder;
-  line-height: 4rem;
-}
-
-.title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.my-text-center {
-  text-align: center;
-}
-
-.my-btn {
-  cursor: pointer;
-  color: $white;
-  background: $primary-color;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 5px;
-  i {
-    padding: 0 10px;
-  }
-  &:hover {
-    background: $secondary-color;
-  }
-}
-
-.text-primary {
-  color: $primary-color;
-}
-
-// Destop
-@media screen and (min-width: 992px) {
-  header {
-    margin-bottom: 60px;
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: calc(100vh - 64px);
-      margin-top: 0;
-      margin-bottom: 0;
-      // border: 1px solid red;
-      .hero-msg-container {
-        order: 1;
-        flex: 1;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        // align-content: center;
-        .hero-msg {
-          // border: 1px solid yellow;
-          // flex: 1;
-          h1 {
-            font-size: 2.5rem;
-            color: $primary-color;
-            // text-transform: uppercase;
-            text-transform: capitalize;
-            margin-bottom: 80px;
-          }
-          P {
-            line-height: 2rem;
-            margin: 70px 0;
-          }
-        }
-        .hero-action {
-          // border: 1px solid green;
-          // flex: 1;
-          i {
-            padding: 0 10px;
-          }
-          .my-btn {
-            background: $secondary-color;
-            color: $white;
-            font-size: 1.2rem;
-            text-align: center;
-            // font-weight: bold;
-            padding: 15px 30px;
-            border-radius: 5px;
-            &:hover {
-              background: $primary-color;
-            }
-            // i {
-            //   padding: 0 20px;
-            //   font-size: 1.5rem;
-            // }
-          }
-        }
-      }
-      .hero-img {
-        order: 2;
-        flex: 1;
-        margin: 0 50px;
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
-
-// .my-btn {
-//   display: block;
-//   cursor: pointer;
-//   width: 100%;
-//   border-radius: 10px;
-//   padding: 15px;
-//   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5) !important;
-//   border: none;
-// }
-
-// .text-center {
-//   text-align: center;
-// }
-
-// .my-card {
-//   cursor: pointer;
-//   padding: 10px;
-//   /* margin: 50px; */
-//   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5) !important;
-//   margin-bottom: 20px !important;
-//   &:hover {
-//     padding: 10px;
-//     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
-//   }
-//   .my-card-img {
-//     display: block;
-//     width: 100%;
-//   }
-//   .my-card-title {
-//     h4 {
-//       font-size: 1.5rem;
-//       color: $primary-color;
-//       margin: 10px 0 10px 0;
-//     }
-//   }
-//   .my-card-content {
-//     p {
-//       font-size: 1.2rem;
-//       font-weight: bold;
-//       color: $secondary-color;
-//       margin: 10px 0 10px 0;
-//     }
-//   }
-//   .my-btn {
-//     color: $white;
-//     background: $secondary-color;
-//     &:hover {
-//       background: $primary-color;
-//     }
-//   }
-// }
-
-// .cart-card {
-//   margin: 10px 0;
-//   padding: 10px;
-//   background: $white;
-//   // border: 1px solid $secondary-color;
-//   .card-img-content {
-//     display: flex;
-//   }
-//   .cart-img {
-//     // border: 1px solid red;
-//     flex: 1;
-//     img {
-//       display: block;
-//       width: 100%;
-//       height: auto;
-//     }
-//   }
-//   .cart-content {
-//     // border: 1px solid red;
-//     flex: 2;
-//     // display: flex;
-//     // flex-direction: column;
-//     // justify-content: flex-start;
-//     padding: 0 0 0 1rem;
-//     .cart-title {
-//       p {
-//         color: $primary-color;
-//         padding-bottom: 10px;
-//         font-weight: 600;
-//       }
-//     }
-//     .cart-price {
-//       p {
-//         color: $secondary-color;
-//         font-weight: 1000;
-//       }
-//     }
-//     p {
-//       margin: 0;
-//       font-size: 1.4rem;
-//       // font-weight: 600;
-//     }
-//   }
-//   .cart-action {
-//     display: flex;
-//     align-items: center;
-//     .cart-remove {
-//       flex: 3;
-//       // border: 1px solid red;
-//       color: red;
-//       font-size: 1.5rem;
-//       text-align: center;
-//     }
-//     .cart-select {
-//       flex: 1;
-//       // border: 1px solid red;
-//     }
-//   }
-// }
-
-// // .flex-center {
-// //   display: flex;
-// //   flex-direction: column;
-// //   justify-content: center;
-// //   // height: calc(100vh - 64px);
-// //   align-items: center;
+// // .m1 {
+// //   margin: 1rem;
 // // }
 
-// .card-authenticate {
-//   padding: 20px;
-//   display: flex;
-//   .card-authenticate-img {
-//     // border: 1px solid red;
-//     flex: 1;
-//     display: block;
-//     height: 100%;
-//     width: 100%;
-//     padding: 0 20px 0 0;
-//     img {
-//       display: block;
-//       width: 100%;
-//     }
-//   }
-//   .card-authenticate-form {
-//     flex: 1;
-//     padding: 0 0 0 20px;
-//   }
-//   .my-btn {
-//     margin: 20px 0 20px 0;
-//     text-transform: uppercase;
-//   }
-//   .card-authenticate-divider {
-//     border-bottom: 2px solid $primary-color;
-//   }
-//   .social-authenticate {
-//     h5 {
-//       font-size: 1.2rem;
-//     }
-//     .social-authenticate-img {
-//       display: flex;
-//       justify-content: space-between;
-//       a {
-//         img {
-//           margin: 20px;
-//           border: 1px solid red;
-//           display: block;
-//           width: 100%;
-//           height: 50px;
-//         }
-//       }
-//     }
-//   }
+// // .heading-1 {
+// //   font-size: 3rem;
+// //   font-weight: bolder;
+// //   line-height: 4rem;
+// // }
+
+// // .title {
+// //   text-align: center;
+// //   text-transform: uppercase;
+// // }
+
+// // .my-text-center {
+// //   text-align: center;
+// // }
+
+// // .my-btn {
+// //   cursor: pointer;
+// //   color: $white;
+// //   background: $primary-color;
+// //   border: none;
+// //   padding: 15px 30px;
+// //   border-radius: 5px;
+// //   i {
+// //     padding: 0 10px;
+// //   }
+// //   &:hover {
+// //     background: $secondary-color;
+// //   }
+// // }
+
+// // .text-primary {
+// //   color: $primary-color;
+// // }
+
+// // #quick-contact {
+// //   i {
+// //     a {
+// //       display: block;
+// //     }
+// //   }
+// // }
+// // .call {
+// //   display: block;
+// //   position: fixed;
+// //   bottom: 100px;
+// //   right: 10px;
+// //   // color: #2d84e7;
+// //   background: $white;
+// //   border-radius: 5%;
+// //   padding: 5px;
+// //   font-size: 42px;
+// // }
+// // .whatsapp {
+// //   display: block;
+// //   position: fixed;
+// //   bottom: 20px;
+// //   right: 10px;
+// //   color: #25d366;
+// //   font-size: 50px;
+// //   background: $white;
+// //   padding: 5px;
+// //   border-radius: 5%;
+// // }
+
+// body {
+//   border: 2px solid red;
 // }
+
+// // Destop
+// @media screen and (min-width: 992px) {
+//   // header {
+//   //   margin-bottom: 60px;
+//   //   .hero {
+//   //     display: flex;
+//   //     justify-content: space-between;
+//   //     align-items: center;
+//   //     height: calc(100vh - 64px);
+//   //     width: 100%;
+//   //     margin-top: 0;
+//   //     margin-bottom: 0;
+//   //     // border: 1px solid red;
+//   //     .hero-msg-container {
+//   //       order: 1;
+//   //       flex: 1;
+//   //       display: flex;
+//   //       height: 100%;
+//   //       flex-direction: column;
+//   //       justify-content: center;
+//   //       // align-content: center;
+//   //       .hero-msg {
+//   //         // border: 1px solid yellow;
+//   //         // flex: 1;
+//   //         h1 {
+//   //           font-size: 2.5rem;
+//   //           color: $primary-color;
+//   //           // text-transform: uppercase;
+//   //           text-transform: capitalize;
+//   //           margin-bottom: 80px;
+//   //         }
+//   //         P {
+//   //           line-height: 2rem;
+//   //           margin: 70px 0;
+//   //         }
+//   //       }
+//   //       .hero-action {
+//   //         // border: 1px solid green;
+//   //         // flex: 1;
+//   //         i {
+//   //           padding: 0 10px;
+//   //         }
+//   //         .my-btn {
+//   //           background: $secondary-color;
+//   //           color: $white;
+//   //           font-size: 1.2rem;
+//   //           text-align: center;
+//   //           // font-weight: bold;
+//   //           padding: 15px 30px;
+//   //           border-radius: 5px;
+//   //           &:hover {
+//   //             background: $primary-color;
+//   //           }
+//   //           // i {
+//   //           //   padding: 0 20px;
+//   //           //   font-size: 1.5rem;
+//   //           // }
+//   //         }
+//   //       }
+//   //     }
+//   //     .hero-img {
+//   //       order: 2;
+//   //       flex: 1;
+//   //       margin: 0 50px;
+//   //       img {
+//   //         display: block;
+//   //         width: 100%;
+//   //       }
+//   //     }
+//   //   }
+//   // }
+// }
+
+// @media screen and (max-width: 600px) {
+//   // header {
+//   //   .hero {
+//   //     display: flex;
+//   //     flex-direction: column;
+//   //     justify-content: center;
+//   //     align-items: center;
+//   //     margin-bottom: 50px;
+//   //     height: calc(100vh - 56px);
+//   //     // min-height: 100vh;
+//   //     .hero-img {
+//   //       // order: 2;
+//   //       margin: 1.5rem 0;
+//   //       img {
+//   //         display: block;
+//   //         width: 100%;
+//   //       }
+//   //     }
+//   //     .hero-msg {
+//   //       // order: 1;
+//   //       h1 {
+//   //         font-size: 1.8rem;
+//   //         color: $primary-color;
+//   //         font-weight: bold;
+//   //         text-align: justify;
+//   //       }
+//   //       p {
+//   //         font-size: 1.5rem;
+//   //         padding-bottom: 1.2rem;
+//   //       }
+//   //     }
+//   //     .hero-action {
+//   //       .my-btn {
+//   //         color: $white;
+//   //         text-align: center;
+//   //         font-size: 1.5rem;
+//   //         &:hover {
+//   //           background: $secondary-color;
+//   //         }
+//   //       }
+//   //     }
+//   //   }
+//   // }
+
+//   // header {
+//   //   .hero {
+//   //     // height: 100vh;
+//   //     // width: 100%;
+//   //     border: 2px solid red;
+//   //     // display: block;
+//   //     margin-bottom: 20px;
+//   //     min-height: calc(100vh - 57px);
+//   //     max-height: calc(100vh - 56px);
+//   //     .hero-img {
+//   //       margin: 1.5rem 0;
+//   //       img {
+//   //         display: block;
+//   //         width: 100%;
+//   //       }
+//   //     }
+//   //     .hero-msg {
+//   //       h1 {
+//   //         font-size: 2rem;
+//   //         color: $primary-color;
+//   //         font-weight: bold;
+//   //         padding: 20px;
+//   //       }
+//   //       p {
+//   //         font-size: 1.5rem;
+//   //         padding-bottom: 1.2rem;
+//   //       }
+//   //     }
+//   //     .hero-action {
+//   //       .my-btn {
+//   //         margin: 0 20px 0 20px;
+//   //         background: $secondary-color;
+//   //         color: $white;
+//   //         text-align: center;
+//   //         font-size: 1.5rem;
+//   //         &:hover {
+//   //           background: $secondary-color;
+//   //         }
+//   //       }
+//   //     }
+//   //   }
+//   // }
+// }
+
+.tb-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.tb-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
