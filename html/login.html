@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/materialize-css/css/materialize.css" />
+    <link rel="stylesheet" href="../css/farm2door-css/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>FARMER825</title>
+  </head>
+  <body>
+    <header id="home" class="scrollspy">
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <div class="container">
+              <!-- <a href="#" class="brand-logo">
+               LOGO
+              </a> -->
+              <a href="#" class="brand-logo">
+                <img
+                  src="../img/farm2door-log.png"
+                  alt=""
+                  height="100%"
+                  class="esponsive-img"
+                />
+              </a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+                ><i class="material-icons menu">menu</i></a
+              >
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#sign-up">Sign Up</a></li>
+                <li><a href="#learn-more">Learn More</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#sign-up">Sign Up</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </header>
+    <section id="authenticate">
+      <div class="authenticate-img">
+        <img
+          src="https://images.unsplash.com/photo-1580682777666-24a7b3024e24?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+          alt=""
+        />
+      </div>
+      <div class="authenticate-form">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="center">Login To Your Dashboard</h5>
+            <form action="">
+              <div class="input-field">
+                <input
+                  placeholder="Email"
+                  id="first_name"
+                  type="text"
+                  class="validate"
+                />
+                <label for="first_name">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" name="" id="" placeholder="Password" />
+                <label for="last_name">Password</label>
+              </div>
+              <p>
+                <label>
+                  <input type="checkbox" checked="checked" />
+                  <span>Remember Me</span>
+                </label>
+              </p>
+              <div class="center">
+                <button type="submit" class="tb-btn">
+                  Login<i class="material-icons waves-effect">vpn_key</i>
+                </button>
+              </div>
+              <div class="action center">
+                <p>
+                  Don't have an account
+                  <a href="register.html">Register Here</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+  </body>
+</html>

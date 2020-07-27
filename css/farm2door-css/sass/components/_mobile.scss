@@ -177,4 +177,96 @@ h1 {
     padding: 5px;
     border-radius: 5%;
   }
+
+  #authenticate {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    .authenticate-img {
+      // border: 5px solid green;
+      flex: 1;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .authenticate-form {
+      // border: 5px solid red;
+      flex: 2;
+      .card {
+        height: 62vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        .card-content {
+          flex: 1;
+          h5 {
+            font-weight: bold;
+            color: $primary-color;
+            padding: 0 0 2rem 0 !important;
+          }
+          .tb-btn {
+            background: $secondary-color;
+            margin-top: 50px;
+            padding: 1rem 1.5rem;
+            color: $white;
+            &:hover {
+              background: $primary-color;
+            }
+            i {
+              padding: 0 0 0 10px;
+            }
+          }
+          .action {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+  #register {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 56px);
+    .register-img {
+      flex: 1;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .register-form {
+      flex: 5;
+      .card {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        .card-content {
+          flex: 1;
+          h5 {
+            font-weight: bold;
+            color: $primary-color;
+            padding: 0 0 2rem 0 !important;
+          }
+          .tb-btn {
+            background: $secondary-color;
+            margin-top: 50px;
+            padding: 1rem 1.5rem;
+            color: $white;
+            &:hover {
+              background: $primary-color;
+            }
+            i {
+              padding: 0 0 0 10px;
+            }
+          }
+          .action {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
