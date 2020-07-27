@@ -16,6 +16,32 @@
     <title>FARMER825</title>
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+      attribution=setup_tool
+      page_id="110904603953253"
+theme_color="#0084ff"
+logged_in_greeting="Hi! Want to find out more about Farmer825?"
+logged_out_greeting="Hi! Want to find out more about Farmer825?">
+    </div>
     <header id="home" class="scrollspy">
       <div class="navbar-fixed">
         <nav>
@@ -71,7 +97,7 @@
       </section>
     </header>
 
-    <section id="quick-contact">
+    <!-- <section id="quick-contact">
       <a href="tel:+233322005235" target="_blank">
         <i
           class="call tooltipped fas fa-phone"
@@ -79,10 +105,6 @@
           data-tooltip="Call Us"
         ></i>
       </a>
-      <!-- <a
-        href="https://web.whatsapp.com/send?phone=233551818916&text=Hello%20I'm%20from%20your%20website%20https://farmer825.com,%20I%20would%20like%20to%20find%20out%20more%20about%20FARMER825%20project"
-        target="_blank"
-      > -->
       <a
         href="https://wa.me/233551818916?text=Hello%20I'm%20from%20your%20website%20https://farmer825.com,%20I%20would%20like%20to%20find%20out%20more%20about%20FARMER825%20project."
         target="_blank"
@@ -93,14 +115,14 @@
           data-tooltip="Whatsapp Us"
         ></i>
       </a>
-    </section>
+    </section> -->
 
     <section id="how-it-works" class="scrollspy">
       <div class="container">
         <h3 class="tb-title">How it works</h3>
         <div class="model">
           <div class="model-img">
-            <img src="../svg/undraw_subscriber_vabu.svg" alt="" />
+            <img src="../svg/farming-and-gardening.svg" alt="" />
           </div>
           <div class="model-msg">
             <h4>1. Subscribe To Be a Farmer</h4>
