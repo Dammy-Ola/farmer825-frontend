@@ -219,13 +219,15 @@
       }
     }
     .register-form {
+      min-height: calc(100vh - 64px);
+      overflow-y: scroll;
       flex: 1;
       .card {
-        height: calc(100vh - 64px);
-        // height: 100vh;
+        // height: calc(100vh - 64px);
+        min-height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         margin: 0;
         .card-content {
           flex: 1;
